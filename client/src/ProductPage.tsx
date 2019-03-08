@@ -76,43 +76,6 @@ class ProductPage extends React.Component<ProductPageProps & RouteComponentProps
             key: ''
         };
 
-        /*const historyState = history.location.state;
-        const originatedPageStr = (typeof (historyState) !== "undefined" && typeof (historyState.originatedPage) !== "undefined") ? historyState.originatedPage : "/";
-        const pageDataJSON = (typeof (historyState) !== "undefined" && typeof (historyState.pageData) !== "undefined") ? historyState.pageData : currAppState.pageData;
-
-        const imageDataJSON = {
-            Author: '',
-            Description: '',
-            Group: '',
-            Image: '',
-            ImageId: '',
-            Name: '',
-            Reserved: '',
-            Reserved_Until: '',
-            Type: '',
-            UserId: '',
-            key: ''
-        };
-
-        if (typeof (historyState) !== "undefined" && typeof (historyState.imageData) !== "undefined") {
-            imageDataJSON= {
-                Author: historyState.imageData.Author,
-                Description: historyState.imageData.Description,
-                Group: historyState.imageData.Group,
-                Image: historyState.imageData.Image,
-                ImageId: historyState.imageData.ImageId,
-                Name: historyState.imageData.Name,
-                Reserved: historyState.imageData.Reserved,
-                Reserved_Until: historyState.imageData.Reserved_Until,
-                Type: historyState.imageData.Type,
-                UserId: historyState.imageData.UserId,
-                key: historyState.imageData.key
-            }
-        }
-
-        // tslint:disable-next-line:no-console
-        console.log("originated state is: ", typeof historyState);*/
-
         this.state = {
             error: currAppState.error,
             favorites: currAppState.favorites,
@@ -124,7 +87,7 @@ class ProductPage extends React.Component<ProductPageProps & RouteComponentProps
             redirect: false,
             shoppingBasket: currAppState.shoppingBasket,
             userAuthorized: false,
-            username: "guest"
+            username: currAppState.username
         };
     }
 
