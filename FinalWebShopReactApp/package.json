@@ -1,8 +1,8 @@
 {
   "name": "my-web-shop-template",
   "version": "0.1.0",
-  "private": true,
   "proxy": "http://localhost:5000/",
+  "private": true,
   "homepage": "https://webshopforyourkids.netlify.com/",
   "dependencies": {
     "axios": "^0.18.0",
