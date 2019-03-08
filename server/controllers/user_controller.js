@@ -207,7 +207,7 @@ function handleUserInfo() {
                 return res.status(404).json({ "result": error });
             });
         } else {
-            return res.status(405).json({ "result": "With guest user it is not allowed to do this action: " + error });
+            return res.status(405).json({ "result": "With guest user it is not allowed to modify user favorites and shopping basket!"});
         }
 
     };

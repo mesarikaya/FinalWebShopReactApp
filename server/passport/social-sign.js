@@ -89,12 +89,12 @@ function handleSocialSignIn() {
                                     // Share user saved status
                                     return res.status(200).json({
                                         result: {
-                                            favorites: user.favorites,
+                                            favorites: newUser.favorites,
                                             message: "User signed in",
-                                            shoppingBasket: user.shoppingBasket,
+                                            shoppingBasket: newUser.shoppingBasket,
                                             token: token,
                                             userVerified: true,
-                                            username: user.social_login.oauthID
+                                            username: newUser.social_login.oauthID
                                         }
                                     });
                                 }
