@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "FinalWebShopReactApp", "FinalWebShopReactApp\FinalWebShopReactApp.njsproj", "{BB457321-C446-4E61-85D8-5C8794C128AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB457321-C446-4E61-85D8-5C8794C128AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB457321-C446-4E61-85D8-5C8794C128AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB457321-C446-4E61-85D8-5C8794C128AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB457321-C446-4E61-85D8-5C8794C128AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {79D4B2FE-B807-4712-9E3A-A9D9CBBAA1C5}
+	EndGlobalSection
+EndGlobal

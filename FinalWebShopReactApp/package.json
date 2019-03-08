@@ -1,0 +1,12 @@
+{
+  "name": "final-web-shop-react-app",
+  "version": "0.0.0",
+  "description": "FinalWebShopReactApp",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.14"
+  }
+}
