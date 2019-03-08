@@ -1,12 +1,52 @@
 {
-  "name": "final-web-shop-react-app",
-  "version": "0.0.0",
-  "description": "FinalWebShopReactApp",
-  "main": "server.js",
-  "author": {
-    "name": ""
+  "name": "my-web-shop-template",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:5000/",
+  "homepage": "https://webshopforyourkids.netlify.com/",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.3.1",
+    "concurrently": "^4.1.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongodb-session": "^2.1.1",
+    "connected-react-router": "^4.5.0",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "express-session": "^1.15.6",
+    "font-awesome": "^4.7.0",
+    "helmet": "^3.15.1",
+    "history": "^4.7.2",
+    "jsonwebtoken": "^8.5.0",
+    "jwt-decode": "^2.2.0",
+    "latest": "^0.2.0",
+    "mongoose": "^5.4.17",
+    "netlify-lambda": "^1.4.2",
+    "nodemailer": "^5.1.1",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth2": "^0.1.6",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "query-string": "^6.3.0",
+    "randomstring": "^1.1.5"
+  },
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "devDependencies": {
-    "@types/node": "^8.0.14"
+    "dotenv": "^6.2.0",
+    "typescript": "^3.3.3333"
+  },
+  "engines": {
+    "node": "10.13.0",
+    "npm": "6.9.0"
   }
 }
