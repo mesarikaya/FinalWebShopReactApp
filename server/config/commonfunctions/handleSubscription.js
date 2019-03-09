@@ -7,7 +7,7 @@ var User = require('../../models/user.js');
 function handleSubscription() {
 
     // Function to send a subscription email via NodeMailer
-    this.sendEmail = (req, email, verificationToken) => {
+    this.sendEmail = (req, email, verificationToken, done) => {
         // Use nodemailer.js
         // tslint:disable-next-line:no-console
         console.log("inside handle email sending");

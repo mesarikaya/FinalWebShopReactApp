@@ -45,7 +45,7 @@ module.exports = new LocalStrategy({
                     // Try to send an email to the user to see if email exists
                     try {
                         // Send subscription confirmation email to the user
-                        handleSubscription.sendEmail(req, email, verificationToken);
+                        handleSubscription.sendEmail(req, email, verificationToken, done);
 
                         // Create the user
                         // tslint:disable-next-line:no-console
