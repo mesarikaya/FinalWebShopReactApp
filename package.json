@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "dotenv": "^6.2.0",
-    "typescript": "^3.3.3333"
+    "typescript": "2.6.2"
   },
   "engines": {
     "node": "10.13.0",
