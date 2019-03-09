@@ -78,9 +78,15 @@ if (process.env.NODE_ENV === "production") {
 }
 
 let port = 5000 || process.env.PORT;
-
+app.listen(port, "0.0.0.0", function() {
+    // tslint:disable-next-line:no-console
+    console.log(`Server started at port: ${port}`);
+});
 /** start server */
+
+/* 
 app.listen(port, () => {
     // tslint:disable-next-line:no-console
     console.log(`Server started at port: ${port}`);
 });
+*/
