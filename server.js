@@ -67,22 +67,15 @@ app.use('/api', router);
 /** set up routes {API Endpoints} */
 routes(router, passport);
 
-//Static file declaration
-app.use(express.static(path.join(__dirname, 'client/build')));
-
-//production mode
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === "production") {
+    //Static file declaration
     app.use(express.static(path.join(__dirname, 'client/build')));
-    //
-    app.get('*', (req, res) => {
-        res.sendfile(path.join(__dirname = 'client/build/index.html'));
-    })
-}
-//build mode
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname + '/client/public/index.html'));
-})
 
+    app.get('/*', function (req, res) {
+        res.sendfile(path.join(__dirname = 'client/build/index.html'));
+    });
+
+}
 
 let port = 5000 || process.env.PORT;
 
