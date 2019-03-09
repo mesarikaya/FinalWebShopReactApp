@@ -43,9 +43,5 @@
     "concurrently": "^4.1.0",
     "dotenv": "^6.2.0",
     "typescript": "^3.3.3333"
-  },
-  "engines": {
-    "node": "10.13.0",
-    "npm": "6.9.0"
   }
 }
