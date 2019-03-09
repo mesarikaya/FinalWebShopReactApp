@@ -17,6 +17,9 @@ module.exports = new LocalStrategy({
         // Convert email to lowercase
         email = email.toLowerCase().trim();
 
+        // tslint:disable-next-line:no-console
+        console.log("Inside Local signup strategy");
+
         process.nextTick(function () {
 
             const handleSubscription = new HandleSubscription();
