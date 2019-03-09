@@ -332,7 +332,6 @@ export function UpdateLocalUserAuthenticationStatus(e: any, formState: any) {
         return (axios.post(`${url}auth/sign-up`, data, {
             headers: {
                 'content-type': 'application/json'
-                    // 'application/x-www-form-urlencoded',
             }
         }).then((response) => { // No dispatch is needed on success for now, maybe add
             // tslint:disable-next-line:no-console
