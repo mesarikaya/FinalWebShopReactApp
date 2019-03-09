@@ -78,7 +78,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 let port = process.env.PORT || 5000;
-let server_host = process.env.HOST || '0.0.0.0';
+let server_host = '0.0.0.0';
 app.listen(port, server_host, function() {
     // tslint:disable-next-line:no-console
     console.log(`Server started at port: ${port}`);
