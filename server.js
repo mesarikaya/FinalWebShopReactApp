@@ -81,6 +81,7 @@ if (process.env.NODE_ENV === "production") {
     });
 
     // Start listening the port
+    // Set the host to  '0.0.0.0' for heroku
     app.listen(port, '0.0.0.0', function() {
         // tslint:disable-next-line:no-console
         console.log(`Server started at port: ${port}`);
