@@ -104,8 +104,8 @@ class Navbar extends React.Component<Props, NavBarState> {
         } else {
             return (
                 <a>
-                    <button className="btn btn-sm login_button m-2" onClick={(e) => { this.props.onLogout(e, this.props.pageData) }}>
-                        <i className="fas fa-user-plus"><strong id="icons"> Log out</strong></i>
+                    <button className="btn btn-sm logout_button m-2" onClick={(e) => { this.props.onLogout(e, this.props.pageData) }}>
+                        <i className="fas fa-user-minus"><strong id="icons"> Log out</strong></i>
                     </button>
                 </a>
             );

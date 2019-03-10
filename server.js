@@ -67,6 +67,9 @@ app.use('/api', router);
 /** set up routes {API Endpoints} */
 routes(router, passport);
 
+let server_host = process.env.HOST;
+
+// Set the static build path for production
 if (process.env.NODE_ENV === "production") {
     //Static file declaration
     app.use(express.static(path.join(__dirname, 'client/build')));
@@ -75,20 +78,15 @@ if (process.env.NODE_ENV === "production") {
         res.sendfile(path.join(__dirname = 'client/build/index.html'));
     });
 
+    // For Heroku set the host, otherwise it does not work
+    let server_host = '0.0.0.0';
 }
 
+// Get the port
 let port = process.env.PORT || 5000;
-let server_host = '0.0.0.0';
+
+// Start listening the port
 app.listen(port, server_host, function() {
     // tslint:disable-next-line:no-console
     console.log(`Server started at port: ${port}`);
 });
-
-/** start server */
-
-/* 
-app.listen(port, () => {
-    // tslint:disable-next-line:no-console
-    console.log(`Server started at port: ${port}`);
-});
-*/

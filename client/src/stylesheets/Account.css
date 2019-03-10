@@ -159,10 +159,6 @@
         max-width: 20rem;
     }
 
-    .navbar-brand {
-        display: none;
-    }
-
     .btn-group-vertical {
         flex-direction: row;
     }
@@ -188,11 +184,7 @@
     #username, #password {
         max-width: 30rem;
     }
-
-    .navbar-brand {
-        display: none;
-    }
-
+    
     .left {
         margin-bottom: 20px;
     }

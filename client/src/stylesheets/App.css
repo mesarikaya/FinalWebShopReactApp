@@ -116,6 +116,12 @@
     border-radius: 48px;
 }
 
+.logout_button {
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 48px;
+}
+
 .favorites_button {
     background-color: transparent;
     border-color: transparent;
@@ -220,9 +226,6 @@
         order: 2;
     }
 
-    .navbar-brand {
-        display: none;
-    }
 
     .img_logo {
         max-width: 30px;
@@ -287,9 +290,7 @@
         justify-content: center;
     }
 
-    .navbar-brand {
-        display: none;
-    }
+
 
     .search_input {
         min-width: 100px;
