@@ -134,6 +134,10 @@
     border-radius: 48px;
 }
 
+.myorders_button:hover{
+    color: greenyellow;
+}
+
 .box {
     display: flex;
     flex-direction: row;

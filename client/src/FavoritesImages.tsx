@@ -16,6 +16,7 @@ import * as actions from './redux/actions/PageContentActions';
 export interface ImageExtraProps {
     UserId: string;
     modifyFavorites(e: any, props: any, action: boolean): (dispatch: Dispatch<actions.UpdatePageContentAction>) => Promise<void>;
+    modifyShoppingBasket(e: any, props: any, action: boolean): (dispatch: Dispatch<actions.UpdatePageContentAction>) => Promise<void>;
 };
 
 export interface ImageExtraState {
@@ -96,7 +97,8 @@ class FavoritesImages extends React.Component<FavoriteImageProps & ImageExtraPro
                                 <a href="/myorders">
                                     <button className="btn btn-sm myorders_button">
                                         <i className="fas fa-shopping-basket" id="orders"
-                                            style={{ color: '#ff6000', fontSize: '16px' }}>
+                                            style={{ color: '#ff6000', fontSize: '16px' }}
+                                            onClick={(e) => { this.props.modifyShoppingBasket(e, this.props, true) }}>
                                             <strong id="icons"> Add</strong>
                                         </i>
                                     </button>
@@ -119,7 +121,8 @@ class FavoritesImages extends React.Component<FavoriteImageProps & ImageExtraPro
 // Set functions to use in Redux Dispatch
 export function mapDispatchToProps(dispatch: any) {
     return {
-        modifyFavorites: (e: any, props: any, action: boolean) => dispatch(actions.modifyFavorites(e, props, action))
+        modifyFavorites: (e: any, props: any, action: boolean) => dispatch(actions.modifyFavorites(e, props, action)),
+        modifyShoppingBasket: (e: any, props: any, action: boolean) => dispatch(actions.modifyShoppingBasket(e, props, true))
     }
 }
 

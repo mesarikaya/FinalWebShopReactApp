@@ -79,7 +79,7 @@
     color: #333333;
 }
 
-favorites_button:hover {
+.favorites_button:hover {
     background-color: transparent !important;
 }
 
@@ -114,3 +114,4 @@ favorites_button:hover {
         margin-top: 6rem !important;
     }
 }
+
