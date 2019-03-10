@@ -67,7 +67,6 @@ app.use('/api', router);
 /** set up routes {API Endpoints} */
 routes(router, passport);
 
-
 // Get the port
 const port = process.env.PORT || 5000;
 
