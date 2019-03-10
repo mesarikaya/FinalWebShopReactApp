@@ -32,12 +32,20 @@
     color: #f1356b;
 }
 
+.fa-heart:hover {
+    color: orange;
+}
+
 .fa-user {
     color: #200cdc;
 }
 
 .fa-shopping-basket {
     color: blue;
+}
+
+.add_to_basket_button:hover {
+    color: orchid
 }
 
 .search_box {

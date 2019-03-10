@@ -180,6 +180,14 @@
     z-index: 2;
 }
 
+.add_to_cart_img:hover {
+    color: pink;
+}
+
+.add_to_favorites_img:hover {
+    color: orange;
+}
+
 .fawesome {
     text-align: right;
 }
@@ -225,7 +233,6 @@
     .box :nth-child(3) {
         order: 2;
     }
-
 
     .img_logo {
         max-width: 30px;
@@ -289,8 +296,6 @@
         text-align: center;
         justify-content: center;
     }
-
-
 
     .search_input {
         min-width: 100px;
